@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.banner{
+ position: relative;
+ display: flex;
+ height: 100vh;
+ width: 100%;
+ justify-content: center;
+ align-items: center;
+ background-color: #3275ca;
+}
+
+.banner img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    opacity: 0.25;
+    height: 100%;
+    width: 100%;
+}
+
+.banner .content {
+    position: relative;
+    max-width: 750px;
+    text-align: center;
+    color: white;
+}
+.banner .content h1{
+    font-size: 65px;
+    margin-bottom:15px ;
+}
+.banner .content p{
+    padding: 0px 10px ;
+}
+
+.banner header{
+    position: absolute;
+    top: 0;
+    left:0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px 100px;
+    width: 100%;
+
+}
+
+.banner header .logo{
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    letter-spacing: 1.5px;
+}
+.banner header .toggole{
+    width: 36px;
+    position: relative;
+    background-size: cover;
+    height: 28px;
+    /* border: 1px solid black; */
+    background-image: url(img/toggle.png);
+}
+.about{
+    position: relative;
+    display: flex;
+    width: 100%;
+  
+}
+.about .aboute-content{
+    width: 50%;
+    text-align: justify;
+    background-color: #162c3b ;
+    padding:110px 45px;
+}
+.about .aboute-content h2{
+    color: white;
+    margin-bottom:10px ;
+    font-size: 30px;
+}
+
+.about .aboute-content > p{
+    color: white;
+    opacity: 0.8;
+    line-height: 24px;
+}
+.about .img-box{
+    width: 50%;
+    background-position: center;
+    background-size: cover;
+    background-image: url(img/window.jpg);
+}
+.services{
+    position: relative;
+    /* border: 1px solid black; */
+    padding: 100px;
+    text-align: center;
+    background-color: #12222d;
+    
+}
+.services >h2,p{
+    margin-bottom: 15px;
+    color: white;
+}
+/* .services >p{
+    padding: 10px 400px;
+} */
+
+.services .container{
+    width: 100%;
+    
+    /* border: 1px solid black; */
+    display: flex;
+    margin-top: 80px;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.services .container .services-box{
+    width: 350px;
+    height: 400px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    margin: 10px;
+    z-index: 100;
+}
+.services .container .services-box img{
+    width: 130px;
+}
+.services .container .services-box >h2{
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.tech{
+    position: relative;
+    background-color: #3f8ffc;
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -300px;
+    padding-top: 300px;
+    
+}
+.tech .tech-contentbx{
+    padding-right: 45px;
+    /* border: 1px solid black; */
+}
+.tech .tech-contentbx > h2 {
+    font-size: 55px;
+    margin-bottom: 10px ;
+}
+
+.tech .tech-contentbx > p{
+    font-size: 18px;
+    line-height: 25px;
+    text-align: justify;
+}
+.tech .img-box{
+    max-width: 250px;
+}
+.tech .img-box img{
+    width: 100%;
+    height: 100%;
+}
+@media  (max-width : 991px) {
+    .services .container .services-box {
+        width: 300px;
+        height: 350px;
+        padding: 60px;
+        }   
+    
+     .tech .tech-contentbx > h2 {
+          font-size: 35px;
+          text-align: center;
+         
+       }
+    .tech {
+        flex-direction: column;
+        padding: 30px;
+        margin-top: -300px;
+        padding-top: 300px;
+    }
+    .about{
+        flex-direction: column;
+    }
+    .about .aboute-content,
+    .about .img-box{
+        width: 100%;
+        
+    }
+    .about .img-box{
+        height: 500px;
+        padding: 30px;
+        background-position: center; 
+    }
+}
+
+@media  (max-width : 390px){
+    .container .services-box{
+        padding: 60px;
+    }
+    .about .aboute-content .img-box{
+       padding: 30px;
+    }
+    .banner header {
+        padding: 20px 30px;
+    }
+    .services {
+        padding: 40px 10px;
+    }
+}
